@@ -1,0 +1,7 @@
+Notes: Using the '+' button located up and right for creating a new note.Touching on one note enables to view the extended details of the note.Long press on any note reveals a dialog for editing or deleting an existing note.
+
+Task List : Using the '+' button located up and right for creating a new task. The tasks can be remarked as done/undone by using the checkbox accordingly.Long press on the tasks reveals a dialog for deleting and editing a task.
+
+Camera Notes : Once the application is first installed, using this feature will ask the user for the appropriate permissions. The permissions should be granted, so the feature can operate. Pressing in the camera image a dialog pops for selecting the camera or for uploading photos from the gallery. The selected photos are previewed and the user can choose to enter a title and description and save or discard the photo. The saved photos are previewed in the first screen. By pressing on the photos the user can see the photo in a wider screen and the full title and description and by py pressing the delete button the photo can be deleted.
+
+Location: Using the '+' button located up and right for creating a new location. If it is used for the first time the feature will ask for permissions. The user can find his current location and save it. The initial screen displays all the saved locations. Pressing on one the user can view,edit and delete a location. Pressing on navigate button the user can navigate from his current location to the saved one through Google Maps.

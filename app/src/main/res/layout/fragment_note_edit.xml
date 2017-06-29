@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/noteEditFragment"
+    android:orientation="vertical"
+    android:background="#f2f5f2"
+    tools:context="com.isidioan.notepad.isidorosioannou.notepad.NoteDetailFragment"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTitleScrol">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNoteTitle"
+            android:background="#f2f5f2"
+            android:minLines="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:hint="New Title"
+            android:inputType="text"/>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/editSummaryScrol"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/editNoteSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f2f5f2"
+            android:hint="New Text"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/editSaveButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onSaveMethod"
+        android:text="Save" />
+
+</LinearLayout>

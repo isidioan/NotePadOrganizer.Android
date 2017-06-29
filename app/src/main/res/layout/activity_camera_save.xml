@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context="com.isidioan.notepad.isidorosioannou.notepad.CameraSaveActivity">
+
+   <TextView
+       android:id="@+id/saveTitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Title:"
+       android:textColor="#000000"
+       android:textSize="16sp"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/cameraEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=""
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@id/saveTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/saveDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cameraEditTitle"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/cameraEditDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveDesc"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint=""
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/cameraPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_below="@+id/cameraEditDesc"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_above="@+id/saveCameraButton" />
+
+    <Button
+        android:id="@+id/saveCameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+</RelativeLayout>
